@@ -1,18 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class = "container text-center mt-5" style="text-align: center; margin-top: 80px; font-family: 'Segoe UI', sans-serif;">
+<div class = "container text-center mt-5">
     
-    <h1 style="font-size: 3rem; font-weight: 700; color: #2c3e50;">
+    <h1 class = "display-4 fw-bold text-dark">
         Welcome to {{ restaurant_name }}</h1>
-    <p style="font-size: 1.25rem; color: #555; margin-top: 15px;">
+    <p class="lead text-muted mt-3">
         Experience delicious food crafted with love and passion.
     </p>
-    <div style = "margin-top: 40px;">
-        <a href="{% url 'about' %}"
-            style = "paddind: 12px 25px; background-color: #e67e22; color: white;font-size: 1rem; font-weight: 600; border-radius: 8px; text-decoration: none; transition: background-color 0.3s;">
+    <a class ="btn btn-lg btn-warning mt-4 shadow-sm" href="{% url 'about' %}">
             Learn More About Us
         </a>
-    </div>
+    
 </div>
 {% endblock %}
