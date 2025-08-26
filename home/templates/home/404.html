@@ -1,0 +1,65 @@
+{% laod static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Not Found - {{ restaurant_name }}</title>
+    <link rel="stylesheet" href='{% static 'css/style.css' %}">
+    <style>
+        body{
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9f9f9;
+            text-align: center;
+            padding: 80px 20px;
+            color: #333;
+
+        }
+        .error-box{
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1{
+            font-size: 6rem;
+            font-weight: 800;
+            color: #e74c3c;
+
+        }
+        h2{
+            font-size: 2rem;
+            margin-bottom: 15px;
+            
+
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #555;
+
+        }
+        a{
+            padding: 12px 24px;
+            background: #e67e22;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover{
+            background: #d35400;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="error-box">
+        <h1>404</h1>
+        <h2> Oops! Page not found.</h2>
+        <p> Sorry, the page you're looking for doesn't exist.<br>
+            Let's get you back to the homepage.</p>
+        <a href = "{% url 'home' %}"> Go Home</a>
+
+
+    </div>
+<body>
+</html>
